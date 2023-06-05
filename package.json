@@ -11,6 +11,9 @@
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint-prettier": "yarn prettier:check && yarn lint:check"
   },
+  "lint-staged": {
+    "src/**/*.ts": "yarn lint-prettier"
+  },
   "author": "Limon Hasan",
   "license": "ISC",
   "devDependencies": {
