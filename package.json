@@ -7,7 +7,8 @@
     "start": "ts-node-dev --respawn --transpile-only src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "lint:fix": "eslint --fix",
+    "prettier:fix": "prettier --write .",
+    "lint:fix": "eslint . --fix",
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint-prettier": "yarn prettier:check && yarn lint:check"
   },
